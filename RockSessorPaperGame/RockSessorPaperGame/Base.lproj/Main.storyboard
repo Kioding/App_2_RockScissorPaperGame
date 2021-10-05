@@ -103,6 +103,9 @@
                                         <state key="normal" title="가위">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P07-Bs-4wM"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWg-dn-JSm">
                                         <rect key="frame" x="128" y="0.0" width="118" height="118"/>
@@ -111,6 +114,9 @@
                                         <state key="normal" title="바위">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lr0-cb-MQa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFT-x6-TGo">
                                         <rect key="frame" x="256" y="0.0" width="118" height="118"/>
@@ -119,6 +125,9 @@
                                         <state key="normal" title="보">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="rpsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xpw-ks-9pI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -132,14 +141,20 @@
                                         <state key="normal" title="RESET">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dgl-FF-ZZ4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm3-AG-Bb6">
                                         <rect key="frame" x="192" y="0.0" width="182" height="45"/>
                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                        <state key="normal" title="RESET">
+                                        <state key="normal" title="SELECT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="selectButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mfd-ez-iaV"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -163,6 +178,13 @@
                             <constraint firstItem="2Et-hm-tya" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ydb-Fl-Npb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="computerChoiceLabel" destination="9hB-tA-gef" id="eb1-Ek-hcB"/>
+                        <outlet property="computerImageView" destination="bTF-Ra-CHa" id="e3K-R6-WxE"/>
+                        <outlet property="mainLabel" destination="orD-gN-nMO" id="siP-BY-JS8"/>
+                        <outlet property="myChoiceLabel" destination="LF2-jp-wXi" id="Xbg-uz-Moa"/>
+                        <outlet property="myImageView" destination="aUh-6Y-6sq" id="W4X-fG-xba"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
