@@ -7,7 +7,9 @@
 
 import Foundation
 
-enum Rps {
+
+// 원시값 raw value
+enum Rps: Int {
     case rock
     case paper
     case scissors
