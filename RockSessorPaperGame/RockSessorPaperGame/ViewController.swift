@@ -92,11 +92,19 @@ class ViewController: UIViewController {
     }
     
     @IBAction func resetButtonTapped(_ sender: UIButton) {
-        // 1. 컴퓨터 다시 준비상태 이미지 뷰에 표시하기
-        // 2. 컴퓨터 다시 준비상태 레이블에 표시하기
-        // 3. 내 선택 이미지 뷰도 준비상태 표시하기
-        // 4. 내 선택 레이블도 준비상태 표시하기
-        // 5. mainLabel에 "선택하세요" 표시
+        // 1. 첫번째/두번째 이미지뷰에 준비 이미지 띄우기
+        computerImageView.image = #imageLiteral(resourceName: "ready")
+        myImageView.image = UIImage(named: "ready.png")
+        
+        // 2. 첫번째/두번째 레이블에 "준비" 라고 띄우기
+        computerChoiceLabel.text = "준비"
+        myChoiceLabel.text = "준비"
+
+        // 3. mainLabel에 "선택하세요" 표시
+        mainLabel.text = "선택하세요"
+        
+        // 4. 컴퓨터의 가위바위보 랜덤으로 다시 돌리기
+        computerChoice = Rps(rawValue: Int.random(in: 0...2))!
     }
 }
 
